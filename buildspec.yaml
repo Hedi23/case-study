@@ -13,7 +13,7 @@ phases:
       - ls
       - cd terra 
       - ls
-      - terraform init
+      - terraform init -upgrade
       - terraform workspace new $WORKSPACE
       - terraform workspace select $WORKSPACE
 
