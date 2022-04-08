@@ -7,8 +7,8 @@ terraform {
   }
   backend "s3" {
     encrypt = false
-    bucket = "case-study-tf-bucket-s3-cicd"
-    dynamodb_table = "case-study-tf-state-lock-dynamo-cicd"
+    bucket = "case-study-tf-bucket-s3-stage"
+    dynamodb_table = "case-study-tf-state-lock-dynamo-stage"
     # bucket = "case-study-tf-bucket-s3"
     # dynamodb_table = "case-study-tf-state-lock-dynamo"
     key = "./Profiles/terraform.tfstate.d/dev/terraform.tfstate"
